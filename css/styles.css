@@ -777,8 +777,6 @@ address .link.secondary:focus {
 
 .form-field .form-input::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .form-field .form-input:focus,
