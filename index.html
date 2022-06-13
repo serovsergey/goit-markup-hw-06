@@ -417,27 +417,33 @@
           <form class="call-request-form">
             <label class="form-field">
               <span class="form-label">Имя</span>
-              <input class="form-input" name="name" type="text" />
-              <svg class="input-icon">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+              <div class="input-wrapper">
+                <input class="form-input" name="person" type="text" />
+                <svg class="input-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
             </label>
             <label class="form-field">
               <span class="form-label">Телефон</span>
-              <input class="form-input" name="tel" type="tel" />
-              <svg class="input-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+              <div class="input-wrapper">
+                <input class="form-input" name="phone" type="tel" />
+                <svg class="input-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </label>
             <label class="form-field">
-              <span class="form-label">Телефон</span>
-              <input class="form-input" name="email" type="email" autocomplete="email" />
-              <svg class="input-icon">
-                <use href="./images/icons.svg#icon-email-edit"></use>
-              </svg>
+              <span class="form-label">Почта</span>
+              <div class="input-wrapper">
+                <input class="form-input" name="email" type="email" autocomplete="email" />
+                <svg class="input-icon">
+                  <use href="./images/icons.svg#icon-email-edit"></use>
+                </svg>
+              </div>
             </label>
             <label class="form-field comment">
-              <span class="form-label">Телефон</span>
+              <span class="form-label">Комментарий</span>
               <textarea class="form-input" name="comment" placeholder="Введите текст"></textarea>
             </label>
             <label class="form-field accept">
@@ -445,10 +451,12 @@
               <svg class="checkbox-icon">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="">Условия договора</a>
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="agreement-link" href="">Условия договора</a></span
+              >
             </label>
-            <button class="button primary" type="submit">Отправить</button>
+            <button class="form-submit button primary" type="submit">Отправить</button>
           </form>
         </div>
       </div>
