@@ -731,6 +731,7 @@ address .link.secondary:focus {
 }
 
 .form-field {
+  position: relative;
   display: block;
   margin-bottom: 10px;
   font-size: 14px;
@@ -798,12 +799,46 @@ address .link.secondary:focus {
   width: 18px;
   transition: fill var(--transition-style);
 }
-/* 23 */
 .form-field.accept {
   display: flex;
   align-items: center;
   padding-left: 37px;
   height: 24px;
+}
+
+.form-field:hover .tool-tip {
+  opacity: 1;
+}
+
+.form-field .tool-tip {
+  opacity: 0;
+  position: absolute;
+  /* top: -50px; */
+  top: -50px;
+  left: 40px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: opacity var(--transition-style) 1000ms;
+}
+
+.form-field.comment .tool-tip {
+  top: -30px;
+}
+
+.tool-tip::before,
+.tool-tip::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid black;
+}
+.tool-tip::after {
+  border-top: 10px solid white;
+  bottom: -19px;
 }
 
 .form-field.accept:focus-within {
