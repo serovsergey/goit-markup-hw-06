@@ -822,6 +822,7 @@ address .link.secondary:focus {
   background-color: var(--secondary-background-color);
   border: 1px solid var(--primary-text-color);
   border-radius: 4px;
+  box-shadow: 2px 2px 4px 0px grey;
   transition: opacity var(--transition-style) 1000ms;
 }
 
